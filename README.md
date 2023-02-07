@@ -138,6 +138,14 @@ nohup python3 app.py & tail -f nohup.out          # 在后台运行程序并通�
 
 FAQs： <https://github.com/zhayujie/chatgpt-on-wechat/wiki/FAQs>
 
+## 镜像启动
+
+https://hub.docker.com/repository/docker/hillwong/chatgpt-wechat/general
+
+```bash
+docker run -d --name chatgpt-wechat -v $PWD/config.json:/app/config.json hillwong/chatgpt-wechat
+docker logs chatgpt-wechat
+```
 
 ## 联系
 
